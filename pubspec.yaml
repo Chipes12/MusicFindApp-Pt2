@@ -1,0 +1,50 @@
+name: MusicFindApp 
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  avatar_glow: ^2.0.2
+  url_launcher: ^6.1.6
+  http: ^0.13.5
+  flutter_dotenv: ^5.0.2
+  font_awesome_flutter: ^10.2.1
+  path_provider:
+  permission_handler: ^10.0.2
+  record: ^4.4.0
+  provider: ^6.0.3
+  equatable:
+  flutter_bloc: 
+  #Firebase
+  firebase_auth:
+  firebase_core:
+  cloud_firestore:
+  firebase_storage:
+  flutterfire_ui:
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.10.0
+
+flutter_icons:
+  android: "launcher_icon"
+  image_path: "assets/images/música.png"
+  min_sdk_android: 19
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/GIFs/
+    - .env
