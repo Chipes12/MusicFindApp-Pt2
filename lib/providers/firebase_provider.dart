@@ -58,8 +58,9 @@ class FirebaseDB with ChangeNotifier {
   }
 
     bool inFavs(dynamic song) {
+      if(song == null) return false;
       for(var i = 0; i < _favsSongsList.length; i++){
-        if(song["tittle"] == _favsSongsList[i]["tittle"] && song["artist"] == _favsSongsList[i]["artist"] && song["release_date"] == _favsSongsList[i]["release_date"]){
+        if(song["title"] == _favsSongsList[i]["tittle"] && song["artist"] == _favsSongsList[i]["artist"] && song["release_date"] == _favsSongsList[i]["release_date"]){
           return true;
         }
       }

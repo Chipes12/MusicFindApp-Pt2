@@ -21,7 +21,6 @@ class HereYouGo extends StatelessWidget {
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
-              context.read<SongIdentifier>().noSelectedSong();
               context.read<SongIdentifier>().notFound();
               Navigator.push(
                 context,
