@@ -1,6 +1,7 @@
 import 'package:http/http.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-const API_TOKEN = "9ecee196356afc0f58919504b3ed26b5";
+var API_TOKEN = dotenv.env["API_TOKEN"];
 
 class AudDAPIRepository {
   Future<dynamic> postToAudd(audioBinary){
